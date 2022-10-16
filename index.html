@@ -1,0 +1,792 @@
+<html lang="en" class=" scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./output/output.css" />
+   
+
+    <!-- font awasome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+       <!-- Link Swiper's CSS -->
+       <link
+       rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+     />
+
+     <title>Tailwind Portfolio</title>
+
+    
+  </head>
+  <body class="font-raleway">
+    <!-- into section -->
+    <header>
+        <div id="home_page" class="  h-1/2 lg:h-4/5 relative overflow-hidden ">
+          <!-- navbar -->
+          <nav id="nav_scrol"
+            class="w-full   top-0 bg-transparent z-10 fixed overflow-hidden  " 
+          >
+            <div class="container mx-auto py-5 flex items-center justify-between">
+
+              <!-- left logo  -->
+                <div class="flex items-center ">
+                  <img class="w-full " src="./assets/logo.png" alt="navLogo" />
+                </div>
+
+                  <!-- manu bar section  -->
+                <ul
+                  class="hidden md:flex space-x-10 text-[#2d2d2d] font-bold text-sm transition duration-300 uppercase"
+                >
+                  <li class="hover:text-red-500 ">
+                    <a  class=" font-semibold " href="#home_page">homepage</a>
+                  </li>
+                  <li class="hover:text-red-500  transition duration-300">
+                    <a class=" font-semibold " href="#about">about me</a>
+                  </li>
+                  <li class="hover:text-red-500 transition duration-300">
+                    <a class=" font-semibold " href="#services">services</a>
+                  </li>
+                  <li class="hover:text-red-500 transition duration-300">
+                    <a class=" font-semibold " href="#store">Store</a>
+                  </li>
+                  <li class="hover:text-red-500 transition duration-300">
+                    <a class=" font-semibold " href="#blog">Blog</a>
+                  </li>
+                  <li class="hover:text-red-500 transition duration-300">
+                    <a class=" font-semibold " href="#contact_me">contact</a>
+                  </li>
+                </ul>
+                <!-- hamburger  -->
+                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+
+                <!-- mobile manu bar  -->
+                <ul
+                id="menu"
+                class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center uppercase transition duration-300"
+              >
+                    <li class="hover:text-gray-500 ">
+                      <a  class=" font-bold " href="#home_page">homepage</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                      <a href="#about">about me</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                      <a href="#services">services</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                      <a href="#store">Store</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                      <a href="#blog">Blog</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                      <a href="#contact_me">contact</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+          <!-- intro content -->
+          <!-- image -->
+          <img
+            class="absolute z-0   right-0 bottom-0  object-cover h-full  "
+            src="./assets/hero.png"
+            alt=""
+          />
+
+        
+        
+          <!-- texts -->
+          <div
+            class="hidden  md:flex flex-col gap-5 absolute top-10 bottom-0 m-auto left-28 lg:left-9 md:left-12 xl:left-32  p-6 h-fit w-1/3 md:w-1/2  mx-auto "
+          >
+          <p class="hidden lg:block font-medium pb-3 text-[#b8b8b8]">Graphic Designer</p>
+            <h1 class="text-4xl font-bold text-[#3a3a3a]">
+              Hello I’m <br /><span class="text-red-800 font-bold font-nunito"
+                >Daniel Bryan
+              </span>
+            </h1>
+            <p class="text-gray-400 max-w-[470px] ">
+              with over 10 years of experience on web design and development. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. N oumquam quo
+              provident, facere minus temporibus veniam nostrum reprehenderit nihil?
+            </p>
+            <a
+            type="button"
+            class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-4 mb-2 uppercase w-fit"
+          >
+          Get in touch
+          </a>
+            
+        </div> 
+
+      <!-- texts -->
+
+        </div>
+  </header>
+  <!-- main section start here  -->
+    <main>
+
+    <!-- about skil section start here  -->
+    <section class="  bg-[#e5e9ec]">
+      <div id="about" class="scroll-mt-20 pt-10 sm:pt-15 md:pt-20">
+        <div class="container mx-auto md:flex  justify-center items-center gap-5">
+
+          <!-- left  -->
+          <div class="w-full md:w-1/2 p-4    ">
+            <h1
+              class="text-[#2d2d2d] text-3xl md:text-5xl font-semibold md:text-[48px] text-center md:text-start"
+            >
+              Why Hire Me ?
+            </h1>
+            <p class="pb-10 pt-10  text-[#929292]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              deserunt deleniti aperiam architecto molestiae voluptate iure,
+              iste temporibus sit doloribus? <br />
+              Deserunt et sapiente a labore minus fuga quis impedit nobis, nulla
+              sequi est ea provident
+            </p>
+            <div class="text-center md:text-start">
+              <button
+                type="button"
+                class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-4 mb-2 uppercase"
+              >
+                hire me
+              </button>
+              <button
+                type="button"
+                class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 uppercase"
+              >
+                cv download
+              </button>
+            </div>
+          </div>
+
+
+
+          <!-- right  -->
+          <div class="w-full md:w-1/2">
+            <h2
+              class="text-[#2d2d2d]  text-[50px] md:text-[48px] text-center md:text-start mt-6 md:mt-0"
+            >
+              My skills
+            </h2>
+            
+
+            <!-- single progres ber  -->
+            <div class="relative pt-10">
+              <div class="flex items-center justify-between pb-1">
+                <div>
+                  <span
+                    class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 "
+                  >
+                    Adobe Photoshop
+                  </span>
+                </div>
+                <div class="text-right">
+                  <span
+                    class="text-xs font-semibold inline-block text-pink-600"
+                  >
+                    96%
+                  </span>
+                </div>
+              </div>
+              <div
+                class="overflow-hidden h-1 mb-4 text-xs flex rounded bg-pink-200"
+              >
+                <div
+                  style="width: 96%"
+                  class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"
+                ></div>
+              </div>
+            </div>
+              <!-- single progres ber  -->
+
+            <div class="relative pt-1">
+              <div class="flex mb-2 items-center justify-between">
+                <div>
+                  <span
+                    class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 "
+                  >
+                    Adobe Illustrator
+                  </span>
+                </div>
+                <div class="text-right">
+                  <span
+                    class="text-xs font-semibold inline-block text-pink-600"
+                  >
+                    92%
+                  </span>
+                </div>
+              </div>
+              <div
+                class="overflow-hidden h-1 mb-4 text-xs flex rounded bg-pink-200"
+              >
+                <div
+                  style="width: 92%"
+                  class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"
+                ></div>
+              </div>
+            </div>
+            <!-- single progres ber  -->
+
+            <div class="relative pt-1">
+              <div class="flex mb-2 items-center justify-between">
+                <div>
+                  <span
+                    class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 "
+                  >
+                    Adobe After Effect
+                  </span>
+                </div>
+                <div class="text-right">
+                  <span
+                    class="text-xs font-semibold inline-block text-pink-600"
+                  >
+                    85%
+                  </span>
+                </div>
+              </div>
+              <div
+                class="overflow-hidden h-1 mb-4 text-xs flex rounded bg-pink-200"
+              >
+                <div
+                  style="width: 85%"
+                  class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"
+                ></div>
+              </div>
+            </div>
+             <!-- single progres ber  -->
+
+            <div class="relative pt-1">
+              <div class="flex mb-2 items-center justify-between">
+                <div>
+                  <span
+                    class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-400 "
+                  >
+                    Adobe inDesign
+                  </span>
+                </div>
+                <div class="text-right">
+                  <span
+                    class="text-xs font-semibold inline-block text-pink-600"
+                  >
+                    94%
+                  </span>
+                </div>
+              </div>
+              <div
+                class="overflow-hidden h-1 mb-4 text-xs flex rounded bg-pink-200"
+              >
+                <div
+                  style="width: 94%"
+                  class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+         </div>
+    </section>
+
+ <!-- about skil section end here  -->
+
+
+ 
+    <!-- services section start here  -->
+    <section  class=" py-10 mt-10  w-full" >
+      <div id="services" class="container mx-auto pt-10  ">
+        <!-- top -->
+        <div class="flex pb-20 flex-col gap-3 items-center space-y-5">
+       
+          <h1 class="text-3xl font-semibold">What I offer? </h1>
+          <p class="w-3/4 md:w-3/4 lg:w-[450px] text-center text-[#909090] ">
+            Things that I can do for my clients. Just make your good trust I love to provide quality works
+          </p>
+        </div>
+  
+        <!-- buttom  -->
+         <!-- card section  -->
+         <div class="  text-center items-center w-full space-y-3 py-5 md:columns-3 ">
+          <div
+            class="p-6 w-full md:max-w-sm bg-white mx-auto  rounded-lg border border-gray-200 shadow-md "
+          >
+            <img class="mb-2 w-10 h-10 mx-auto text-gray-500 " src="../assets/rocket-lunch.svg" alt="">
+
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+              >
+                Branding
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+              Go to this step by step guideline process on how to certify for
+              your weekly benefits:
+            </p>
+          </div>
+          <!-- card  -->
+          <div
+            class="p-6  w-full md:max-w-sm  mx-auto bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="mb-2 w-10 h-10 mx-auto text-gray-500 ">
+             <img src="../assets/design.svg" alt="">
+            </div>
+
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+              >
+                T-Shart Design
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+              Go to this step by step guideline process on how to certify for
+              your weekly benefits:
+            </p>
+          </div>
+          <!-- card  -->
+          <div
+            class="p-6  w-full md:max-w-sm  mx-auto bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="mb-2 w-10 h-10 mx-auto text-gray-500 ">
+             <img src="../assets/design.svg" alt="">
+            </div>
+
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+              >
+                Pakage Design
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+              Go to this step by step guideline process on how to certify for
+              your weekly benefits:
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+   <!-- services section end here  -->
+
+    <!-- photo gellery section start here 
+  -->
+  <section id="store" class="scroll-mt-3 py-14 px-4    ">
+    <div class=" container mx-auto">
+      <h1
+      class="flex gap-5 justify-center py-5 text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl"
+    >
+      Protofolio
+    </h1>
+  
+    <div class="flex gap-5 justify-center py-5">
+      <button class="bg-white text-[#b6b6b6] px-3 pt-2 hover:text-[#2d2d2d]">All</button>
+      <button class="bg-white text-[#b6b6b6] px-3 pt-2 hover:text-[#2d2d2d]"> Branding</button>
+      <button class="bg-white text-[#b6b6b6] px-3 pt-2 hover:text-[#2d2d2d]">Poster</button>
+      <button class="bg-white text-[#b6b6b6] px-3 pt-2 hover:text-[#2d2d2d]">T-Shirt</button>
+      <button class="bg-white text-[#b6b6b6] px-3 pt-2 hover:text-[#2d2d2d]">Package</button>
+    </div>
+  
+    <div class="gap-6 pt-2 columns-3xs">
+      <figure class="py-4 [break-inside:avoid]">
+        <img
+          class="rounded-md object-cover w-full"
+          src="./assets/img7.png"
+          alt="image.alt_description"
+        />
+      </figure>
+      <figure class="py-4 [break-inside:avoid]">
+        <img
+          class="rounded-md object-cover w-full"
+          src="./assets/img3.png"
+          alt="image.alt_description"
+        />
+      </figure>
+      <figure class="py-4 [break-inside:avoid]">
+        <img
+          class="rounded-md object-cover w-full"
+          src="./assets/img4.png"
+          alt="image.alt_description"
+        />
+      </figure>
+      <figure class="py-4 [break-inside:avoid]">
+        <img
+          class="rounded-md object-cover w-full"
+          src="./assets/img5.png"
+          alt="image.alt_description"
+        />
+      </figure>
+      <figure class="py-4 [break-inside:avoid]">
+        <img
+          class="rounded-md object-cover w-full"
+          src="./assets/img6.png"
+          alt="image.alt_description"
+        />
+      </figure>
+      <figure class="py-4 [break-inside:avoid]">
+        <img
+          class="rounded-md object-cover w-full"
+          src="./assets/img7.png"
+          alt="image.alt_description"
+        />
+      </figure>
+      <figure class="py-4 [break-inside:avoid]">
+        <img
+          class="rounded-md object-cover w-full"
+          src="./assets/hero.png"
+          alt="image.alt_description"
+        />
+      </figure>
+      <figure class="py-4 [break-inside:avoid]">
+        <img
+          class="rounded-md object-cover w-full"
+          src="./assets/img8.png"
+          alt="image.alt_description"
+        />
+      </figure>
+      <figure class="py-4 [break-inside:avoid]">
+        <img
+          class="rounded-md object-cover w-full"
+          src="./assets/img3.png"
+          alt="image.alt_description"
+        />
+      </figure>
+      
+    </div>
+    <div class="text-center pt-10">
+      <button
+        class="text-white uppercase bg-black hover:text-slate-500 duration-300 px-5 py-3"
+      >
+       view protfolio
+      </button>
+    </div>
+  
+    </div>
+  </section>
+
+    <!-- photo gellery section end here  -->
+
+
+  <!-- workr section start here  -->
+  <section id=" services" class="py-10  w-full" >
+    <div class="container mx-auto pt-5  ">
+      <!-- top -->
+      <div class="flex pb-20 flex-col gap-3 items-center space-y-5">
+     
+        <h1 class="text-3xl font-semibold">Brands i've worked</h1>
+        <p class="w-3/4 md:w-3/4 lg:w-[450px] text-center text-[#909090] ">
+          Things that I can do for my clients. Just make your good trust I love to provide quality works
+        </p>
+      </div>
+
+      <!-- buttom  -->
+      <div class="bg-white w-full ">
+        <div class="py-8 lg:py-16  px-4  w-full mx-auto">
+          <div
+            class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400  w-full mx-auto"
+          >
+            <a href="#" class="flex justify-center items-center">
+              <i class="fa-brands fa-google-plus text-4xl"></i>
+            </a>
+            <a href="#" class="flex justify-center items-center">
+              <i class="fa-brands fa-google text-4xl"></i>
+            </a>
+            <a href="#" class="flex justify-center items-center">
+              <i class="fa-solid fa-hospital text-4xl"></i>
+            </a>
+            <a href="#" class="flex justify-center items-center">
+              <i class="fa-solid fa-truck-medical text-4xl"></i>
+            </a>
+            <a href="#" class="flex justify-center items-center">
+              <i class="fa-solid fa-dna text-4xl"></i>
+            </a>
+            <a href="#" class="flex justify-center items-center">
+              <i class="fa-solid fa-bed-pulse text-4xl"></i>
+            </a>
+           
+          </div>
+        </div>
+        <div class="py-8 lg:py-16  px-4  w-full mx-auto">
+          <div
+            class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400  w-full mx-auto"
+          >
+            <a href="#" class="flex justify-center items-center">
+              <i class="fa-brands fa-google-plus text-5xl"></i>
+            </a>
+            <a href="#" class="flex justify-center items-center">
+              <i class="fa-brands fa-google text-5xl"></i>
+            </a>
+            <a href="#" class="flex justify-center items-center">
+              <i class="fa-solid fa-hospital text-5xl"></i>
+            </a>
+            <a href="#" class="flex justify-center items-center">
+              <i class="fa-solid fa-truck-medical text-5xl"></i>
+            </a>
+            <a href="#" class="flex justify-center items-center">
+              <i class="fa-solid fa-dna text-4xl"></i>
+            </a>
+            <a href="#" class="flex justify-center items-center">
+              <i class="fa-solid fa-bed-pulse text-4xl"></i>
+            </a>
+           
+          </div>
+        </div>
+      </div>
+
+      </div>
+  </section>
+
+<!-- workr section end here  -->
+
+<!-- cotted of buyer  -->
+<section class="w-full lg:h-[40vh]">
+  <div
+    class="py-8 px-8 max-w-lg mx-auto bg-white space-y-2 sm:py-4 sm:items-center sm:space-y-0 sm:space-x-6 mt-10"
+  >
+    <div class="flex-1 pb-3">
+      <p class="text-[15px] font-medium">
+        <span
+          class="inline-flex items-center px-3 py-0.5 rounded-full font-medium text-xs sm:text-lg text-[#535353]"
+        >
+          Article lorem20 Article lorem20Article lorem20 Lorem ipsum dolor
+          sit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Eum, maiores?
+        </span>
+      </p>
+    </div>
+    <div class="mt-6 flex items-center">
+      <div class="flex-shrink-0">
+        <img
+          class="h-10 w-10  rounded-full"
+          src="../assets/hero.png"
+          alt="photo"
+        />
+      </div>
+      <div class="ml-3">
+        <p class="text-sm font-bold text-[#2d2d2d]">Emma Brown</p>
+        <div class="flex space-x-1 text-sm text-gray-400">
+          <p class="text-[14px] text[#a8a8a8]">CEO - Squirrel Sweets</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- cotted of buyer  -->
+
+
+<!-- blog post section start here  -->
+<section id="blog" class="scroll-mt-12 py-10  w-full" >
+  <div class="container mx-auto pt-5  ">
+    <!-- top -->
+    <div class="flex pb-20 flex-col gap-3 items-center space-y-5">
+   
+      <h1 class="text-3xl font-semibold">Blogs Post</h1>
+      <p class="w-3/4 md:w-3/4 lg:w-[450px] text-center text-[#909090] ">
+        Things that I can do for my clients. Just make your good trust I love to provide quality works
+      </p>
+    </div>
+
+    <!-- buttom  -->
+
+       <!-- card grid  -->
+       <div
+       class="mt-12 w-full  mx-auto grid gap-9 lg:grid-cols-3   "
+     >
+        <!-- single card  -->
+        <div class="flex flex-col  rounded-md shadow-lg overflow-hidden">
+          <div class="flex-shrink-0">
+            <img
+              class="h-96 w-full object-cover hover:md:scale-105 duration-500"
+              src="../assets/img3.png"alt="blogs photo"
+            />
+            
+          </div>
+ 
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <a href="#" class="block mt-1">
+                <p
+                  class="text-lg hover:text-red-700 duration-300 font-semibold text-gray-900"
+                >
+                  Why Should We Invest More In Branding First?
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+          <!-- single card  -->
+       <div class="flex flex-col  rounded-md shadow-lg overflow-hidden">
+        <div class="flex-shrink-0">
+          <img
+            class="h-96 w-full object-cover hover:md:scale-105 duration-500"
+            src="../assets/img5.png"alt="blogs photo"
+          />
+        </div>
+
+        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+          <div class="flex-1">
+            <a href="#" class="block mt-1">
+              <p
+                class="text-lg hover:text-red-700 duration-300 font-semibold text-gray-900"
+              >
+                Why Should We Invest More In Branding First?
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+        <!-- single card  -->
+        <div class="flex flex-col  rounded-md shadow-lg overflow-hidden">
+          <div class="flex-shrink-0">
+            <img
+              class="h-96 w-full object-cover hover:md:scale-105 duration-500"
+              src="../assets/img6.png"alt="blogs photo"
+            />
+          </div>
+ 
+          <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+              <a href="#" class="block mt-1">
+                <p
+                  class="text-lg hover:text-red-700 duration-300 font-semibold text-gray-900"
+                >
+                  Why Should We Invest More In Branding First?
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+     
+      
+
+      
+     </div>
+
+     <div class="text-center pt-10">
+      <button
+        class="text-white bg-black hover:text-slate-500 rounded-md duration-300 px-8 py-4"
+      >
+        Read all Blogs
+      </button>
+    </div>
+
+
+  </div>
+</section>
+
+
+
+<!-- revew section start here  -->
+<section class="text-gray-600 w-full  ">
+  <div class="container  py-24 mx-auto">
+    <div class="flex flex-wrap  text-center">
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="px-4 py-6">
+          <h2 class="text-[#dddddd] text-7xl font-bold">720+</h2>
+          <p class="pt-2 text-[#535353] text-[16px]">Project Completed</p>
+        </div>
+      </div>
+
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="px-4 py-6">
+          <h2 class="text-[#dddddd] text-7xl font-bold">920+</h2>
+          <p class="pt-2 text-[#535353] text-[16px]">Products Sold</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="px-4 py-6">
+          <h2 class="text-[#dddddd] text-7xl font-bold">23+</h2>
+          <p class="pt-2 text-[#535353] text-[16px]">Awards Received</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="px-4 py-6">
+          <h2 class="text-[#dddddd] text-7xl font-bold">700+</h2>
+          <p class="pt-2 text-[#535353] text-[16px]">Happy Client</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- revew section end here  -->
+
+
+
+    <!-- footer section start here  -->
+    <section  class="py-10 bg-[#d5d9df]  w-full" >
+      <div id=" services" class="container mx-auto pt-5   ">
+        
+        <div
+        class=" container grid grid-cols-1 gap-6  mx-auto justify-center items-center"
+      >
+        <!-- heding section  -->
+        <div class="flex flex-col mt-20 justify-center items-center">
+          <h1 class="text-3xl font-bold py-5">Let's Work Togeter</h1>
+          <p class="text-[#909090] w-[370px]">
+            Things that I can do for my clients. Just make your good trust I
+            love to provide quality works.
+          </p>
+          <div class="pt-10">
+            <button id="contact_me"
+              type="button"
+              class="py-2.5 px-10 mr-2 mb-2 text-lg font-medium text-gray-900 focus:outline-none bg-transparent rounded-full border border-gray-500 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 uppercase"
+            >
+              Contac me
+            </button>
+          </div>
+        </div>
+
+        <!-- bar  -->
+
+        <div
+          class="w-full bg-gray-500 rounded-full h-[2px] mb-4 dark:bg-gray-700"
+        ></div>
+
+        <!-- buttom  -->
+        
+          <footer class=" mx-auto sm:mx-0 flex-col sm:flex md:flex-row justify-between items-center space-y-2 md:space-y-0">
+              <p class=" ">Copyright &copy; by Masum Husain All rights recives</p>
+              <nav  aria-level="Footer manu" class="pt-5 sm:pt-0  " >
+               <ul class="  w-full flex sm:w-80  justify-between  " role="manubar2" id="manubar2" aria-level="Footer manu">
+                   <li class=" " role="none"><a target="_blank" role="manu item" href="https://www.facebook.com/0masum1"><i class="fab fa-facebook text-[30px] hover:text-red-700 "></i></a></li>              
+                   <li role="none"><a target="_blank" role="manu item" href="https://github.com/masumali23020"><i class="fab fa-github text-[30px] hover:text-red-700"></i></a></li>                
+                   <li role="none"><a target="_blank" role="manu item" href="https://www.youtube.com/watch?v=tVdtVVpddIE&list=PLgH5QX0i9K3qjCBXjTmv7Xeh8MDUUVJDO&index=76"><i class="fab fa-youtube text-[30px] hover:text-red-700"></i></a></li>              
+                   <li role="none"><a target="_blank" role="manu item" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin text-[30px] hover:text-red-700"></i></a></li>                
+               </ul>
+   
+           </nav>
+          </footer>
+   
+      </div>
+      </div>
+    </section>
+   <!-- footer section start here  -->
+
+  </main>
+
+
+  </section>
+
+  <!-- main section start here  -->
+
+    <script src="./output/app.js"></script>
+   
+  </body>
+</html>
